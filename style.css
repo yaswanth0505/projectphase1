@@ -362,58 +362,46 @@ p {
 }
 /* === Responsive Layout Only (Navbar untouched) === */
 
-/* Laptops and tablets */
-@media (max-width: 992px) {
-    #about {
-        flex-direction: column;
-        padding: 40px 20px;
-        text-align: center;
-    }
-
-    .about-img img {
-        width: 80%;
-        max-width: 250px;
-        border-radius: 10px;
-    }
-
-    .about-content {
-        max-width: 90%;
-        margin-top: 20px;
-    }
-}
-
-/* Tablets and below */
 @media (max-width: 768px) {
-    #about {
-        padding: 30px 15px;
+    
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        display: none;
     }
-
-    .about-content {
-        padding: 0 10px;
-    }
-
-    .about-img img {
+    
+    
+    .custom-button {
         width: 90%;
+        text-align: center;
+        margin: 0.3rem 0;
     }
 }
 
-/* Small phones */
-@media (max-width: 480px) {
+@media (min-width: 769px) {
+    #about {
+        flex-direction: row;
+        justify-content: center;
+        gap: 3rem;
+    }
+    
+    .about-img {
+        flex: 1;
+        max-width: 400px;
+    }
+    
+    .about-content {
+        flex: 1;
+    }
+    
     .heading {
-        font-size: 2rem;
-    }
-
-    .about-content p {
-        font-size: 1rem;
-    }
-
-    .custom-button {
-        padding: 8px 12px;
-        font-size: 0.9rem;
-    }
-
-    .about-img img {
-        width: 100%;
+        text-align: left;
     }
 }
 
