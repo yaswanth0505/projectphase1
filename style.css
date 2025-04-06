@@ -360,29 +360,40 @@ p {
     color: white;
     margin-bottom: 10px;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .header {
         flex-direction: column;
+        align-items: flex-start;
         padding: 20px;
     }
 
     .navbar {
         flex-direction: column;
-        align-items: center;
         gap: 10px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .navbar a.custom-button {
+        width: 100%;
+        text-align: center;
     }
 
     #about {
         flex-direction: column;
         text-align: center;
+        padding: 20px;
+    }
+
+    .about-img img {
+        width: 80%;
+        max-width: 250px;
     }
 
     .about-content {
-        padding: 0 20px;
+        max-width: 90%;
     }
-}
 
-@media (max-width: 480px) {
     .heading {
         font-size: 2rem;
     }
@@ -390,12 +401,27 @@ p {
     .about-content p {
         font-size: 1rem;
     }
+}
 
-    .custom-button {
-        padding: 8px 12px;
-        font-size: 0.9rem;
+/* Phones and small devices */
+@media (max-width: 600px) {
+    .header {
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    .about-img img {
+        width: 100%;
     }
 }
+
 @media (max-width: 768px) {
     .contact-section h2 {
         font-size: 2rem;
