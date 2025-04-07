@@ -26,16 +26,16 @@ header {
     background: rgba(0, 0, 0, 0.85);
     backdrop-filter: blur(10px);
     z-index: 100;
-    padding: 10px 0;
+    padding: 15px 5%;
 }
 
 .header-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -43,7 +43,6 @@ header {
     color: white;
     font-weight: 600;
     transition: 0.3s ease;
-    margin-bottom: 10px;
 }
 
 .logo:hover {
@@ -53,16 +52,13 @@ header {
 }
 
 .navbar {
-    width: 100%;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 8px;
+    gap: 20px;
 }
 
 .navbar a {
     padding: 8px 12px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     color: white;
     border-radius: 5px;
@@ -70,9 +66,46 @@ header {
     white-space: nowrap;
 }
 
-.navbar a:hover, .navbar a.active {
+.navbar a:hover, 
+.navbar a.active {
     background-color: orangered;
     color: black;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 5%;
+    }
+    
+    .logo {
+        margin-bottom: 5px;
+    }
+    
+    .navbar {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+    .navbar a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        gap: 5px;
+    }
+    
+    .navbar a {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
 }
 
 /* Section Styles */
