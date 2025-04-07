@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yaswanth's Portfolio</title>
+    <title>Contact Yaswanth</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,41 +11,56 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">Yaswanth</a>
-    <nav class="navbar">
-        <a href="index.html" class="custom-button">Home</a>
-        <a href="about.html" class="custom-button" target="_self">About</a>
-        <a href="skills.html" class="custom-button" target="_self">Skills</a>
-        <a href="projects.html" class="custom-button" target="_self">Projects</a>
-        <a href="contact.html" class="custom-button" target="_self">Contact</a>
-    </nav>
+        <div class="header-container">
+            <a href="#" class="logo">Yaswanth</a>
+            <nav class="navbar">
+                <a href="index.html" class="custom-button">Home</a>
+                <a href="about.html" class="custom-button">About</a>
+                <a href="skills.html" class="custom-button">Skills</a>
+                <a href="projects.html" class="custom-button">Projects</a>
+                <a href="contact.html" class="custom-button active">Contact</a>
+            </nav>
+        </div>
     </header>
-    
 
     <section class="contact-section">
-        <br>
-        <br>
-        <br>
+        <div class="contact-container">
+            <h2 class="section-heading">Contact <span>Me</span></h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="number">Phone Number:</label>
+                    <input type="tel" id="number" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" placeholder="Subject of your message">
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-        <h2>Contact <span>Me</span></h2>
-        
-        <form class="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" placeholder="Enter your name">
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Enter your email">
-            
-            <label for="number">Number:</label>
-            <input type="tel" id="number" placeholder="Phone number">
-            
-            <label for="subject">Subject:</label>
-            <input type="text" id="subject" placeholder="Subject">
-            
-            <button type="submit">Send Message</button>
-        </form>
-        </section>
-    
-        
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.instagram.com/yaswanth_reddy_05">
+                <img src="insta.svg" alt="Instagram">
+            </a>
+            <a href="http://linkedin.com/in/kanneti-yaswanth-reddy-189ab1334">
+                <img src="linkedin.svg" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/yaswanth0505">
+                <img src="github.svg" alt="GitHub">
+            </a>
+        </div>
+        <p class="copyright">© 2025 Yaswanth | All Rights Reserved</p>
+    </footer>
 </body>
 </html>
