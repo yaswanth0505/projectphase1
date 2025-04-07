@@ -1,6 +1,6 @@
 Welcome to my personal portfolio website, built using simple HTML and CSS. This portfolio is a reflection of my learning journey and showcases my skills, completed projects, information about me, and various ways to get in touch.
 
---
+---
 
 Homepage
 The homepage serves as an introduction and includes a photo of me along with a brief overview of my experience with HTML and CSS. It also contains links to my Instagram, GitHub, and LinkedIn profiles for easy contact.
