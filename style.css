@@ -134,6 +134,12 @@ p {
 .project a:hover {
     background-color: #ff6600;
 }
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black; 
+    color: white;               
+}
 
 .intro {
     background: #000;
